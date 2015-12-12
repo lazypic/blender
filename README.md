@@ -3,7 +3,7 @@
 
 # install
 ```
-git clone https://github.com/khw7096/blenderset.git ~/blenderset
+cd ~ && git clone https://github.com/lazypic/blenderset.git
 ```
 
 # how to run blender
