@@ -9,10 +9,12 @@ sys.path.append('%s/blenderset/lib' % (os.path.expanduser("~")))
 #import custom python files.
 from LazypicWiki import *
 from LazypicInit import *
+from LazypicPreviewRender import *
 
 def register():
 	bpy.utils.register_class(LazypicWiki)
 	bpy.utils.register_class(LazypicInit)
+	bpy.utils.register_class(LazypicPreviewRender)
 
 def unregister():
 	bpy.utils.unregister_class(LazypicWiki)
