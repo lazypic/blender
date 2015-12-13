@@ -12,7 +12,7 @@ class PreviewRender(bpy.types.Operator):
 		bfile = bpy.data.filepath
 		if bfile != "":
 			bpy.context.scene.render.image_settings.file_format = 'THEORA'
-			bpy.context.scene.render.filepath = "%s.ogg" % (bfile.split(".blend")[0])
+			bpy.context.scene.render.filepath = "%s.ogv" % (bfile.split(".blend")[0])
 			bpy.context.scene.render.use_stamp = True
 			bpy.context.scene.render.use_stamp_lens = True
 			bpy.context.scene.render.use_stamp_marker = True
