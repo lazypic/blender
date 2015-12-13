@@ -22,3 +22,4 @@ class LazypicPreviewRender(bpy.types.Operator):
 		else:
 			#find how to run dialog err window.
 			print("need save")
+			return {'FINISHED'}
