@@ -3,7 +3,7 @@ import os
 
 class Init(bpy.types.Operator):
 	"""lazypic init scene"""
-	bl_idname = "init"
+	bl_idname = "lazypic.init"
 	bl_label = "init"
 	bl_options = {'REGISTER', 'UNDO'}
 

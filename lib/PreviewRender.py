@@ -4,7 +4,7 @@ from os.path import expanduser
 
 class PreviewRender(bpy.types.Operator):
 	"""lazypic auto preview rendering setting"""
-	bl_idname = "preview_render"
+	bl_idname = "lazypic.preview_render"
 	bl_label = "preview_render"
 	bl_options = {'REGISTER', 'UNDO'}
 
