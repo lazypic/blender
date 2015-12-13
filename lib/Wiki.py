@@ -3,8 +3,8 @@ import os
 
 class Wiki(bpy.types.Operator):
 	"""Connect lazypic wiki"""
-	bl_idname = "lazypic.wiki"
-	bl_label = "lazypic_wiki"
+	bl_idname = "wiki"
+	bl_label = "wiki"
 	bl_options = {'REGISTER', 'UNDO'}
 
 	def execute(self, context):
