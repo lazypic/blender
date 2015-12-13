@@ -2,7 +2,7 @@ import bpy
 import os
 from os.path import expanduser
 
-class LazypicPreviewRender(bpy.types.Operator):
+class PreviewRender(bpy.types.Operator):
 	"""lazypic auto preview rendering setting"""
 	bl_idname = "lazypic.preview_render"
 	bl_label = "lazypic_preview_render"

@@ -1,7 +1,7 @@
 import bpy
 import os
 
-class LazypicWiki(bpy.types.Operator):
+class Wiki(bpy.types.Operator):
 	"""Connect lazypic wiki"""
 	bl_idname = "lazypic.wiki"
 	bl_label = "lazypic_wiki"

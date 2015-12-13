@@ -1,7 +1,7 @@
 import bpy
 import os
 
-class LazypicInit(bpy.types.Operator):
+class Init(bpy.types.Operator):
 	"""lazypic init scene"""
 	bl_idname = "lazypic.init"
 	bl_label = "lazypic_init"
