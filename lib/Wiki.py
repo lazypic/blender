@@ -8,5 +8,5 @@ class Wiki(bpy.types.Operator):
 	bl_options = {'REGISTER', 'UNDO'}
 
 	def execute(self, context):
-		os.system("open %s" % "https://sites.google.com/site/lazypicweb/")
+		os.system("open %s" % "https://www.gitbook.com/book/lazypic/blender/details")
 		return {'FINISHED'}
