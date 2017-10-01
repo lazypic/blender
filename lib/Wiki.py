@@ -1,5 +1,5 @@
 import bpy
-import os
+import subprocess
 
 class Wiki(bpy.types.Operator):
 	"""Connect lazypic wiki"""
@@ -8,5 +8,7 @@ class Wiki(bpy.types.Operator):
 	bl_options = {'REGISTER', 'UNDO'}
 
 	def execute(self, context):
-		os.system("open %s" % "https://sites.google.com/site/lazypicweb/")
+		wiki = "https://github.com/lazypic/blenderset/wiki"
+		stdout = subprocess.check_output(["open",wiki])
+		print(stdout)
 		return {'FINISHED'}

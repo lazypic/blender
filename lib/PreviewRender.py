@@ -10,19 +10,22 @@ class PreviewRender(bpy.types.Operator):
 
 	def execute(self, context):
 		bfile = bpy.data.filepath
-		if bfile != "":
-			bpy.context.scene.render.image_settings.file_format = 'THEORA'
-			bpy.context.scene.render.filepath = "%s.ogv" % (bfile.split(".blend")[0])
-			bpy.context.scene.render.use_stamp = True
-			bpy.context.scene.render.use_stamp_lens = True
-			bpy.context.scene.render.use_stamp_marker = True
-			bpy.context.scene.render.use_stamp_sequencer_strip = True
-			bpy.context.scene.render.resolution_x = 1280
-			bpy.context.scene.render.resolution_y = 720
-			bpy.context.scene.render.resolution_percentage = 100
-			bpy.ops.render.opengl(animation=True)
-			return {'FINISHED'}
-		else:
+		if bfile == "":
 			#find how to run dialog err window.
 			print("need save")
 			return {'FINISHED'}
+		bpy.context.scene.render.image_settings.file_format = 'THEORA'
+		bpy.context.scene.render.filepath = self.ogvFilename()
+		bpy.context.scene.render.use_stamp = True
+		bpy.context.scene.render.use_stamp_lens = True
+		bpy.context.scene.render.use_stamp_marker = True
+		bpy.context.scene.render.use_stamp_sequencer_strip = True
+		bpy.context.scene.render.resolution_x = 1280
+		bpy.context.scene.render.resolution_y = 720
+		bpy.context.scene.render.resolution_percentage = 100
+		bpy.ops.render.opengl(animation=True)
+		return {'FINISHED'}
+
+	def ogvFilename(self):
+		name = os.path.splitext(bpy.data.filepath)[0]
+		return name + ".ogv"
