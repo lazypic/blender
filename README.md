@@ -24,3 +24,4 @@ echo "alias blender=\"/Applications/Blender/blender.app/Contents/MacOS/blender -
 
 ## dev link
 - python api : http://www.blender.org/api/blender_python_api_2_68_5/info_quickstart.html 
+- 블랜더 소스코드 : http://download.blender.org/source/
