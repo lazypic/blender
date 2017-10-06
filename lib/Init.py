@@ -13,4 +13,5 @@ class Init(bpy.types.Operator):
 		bpy.context.scene.render.filepath = "//render_out"
 		bpy.context.scene.render.engine = 'CYCLES'
 		bpy.data.scenes["Scene"].cycles.shading_system = True # OSL Shader Enable
+		bpy.data.scenes["Scene"].unit_settings.system = "METRIC" # default meter setting.
 		return {'FINISHED'}
