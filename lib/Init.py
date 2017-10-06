@@ -1,3 +1,4 @@
+#coding:utf-8
 import bpy
 import os
 
@@ -11,4 +12,5 @@ class Init(bpy.types.Operator):
 		bpy.context.scene.render.image_settings.file_format = 'OPEN_EXR_MULTILAYER'
 		bpy.context.scene.render.filepath = "//render_out"
 		bpy.context.scene.render.engine = 'CYCLES'
+		bpy.data.scenes["Scene"].cycles.shading_system = True # OSL Shader Enable
 		return {'FINISHED'}
