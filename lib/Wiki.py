@@ -8,7 +8,7 @@ class Wiki(bpy.types.Operator):
 	bl_options = {'REGISTER', 'UNDO'}
 
 	def execute(self, context):
-		wiki = "https://github.com/lazypic/blenderset/wiki"
+		wiki = "https://github.com/lazypic/blender/wiki"
 		stdout = subprocess.check_output(["open",wiki])
 		print(stdout)
 		return {'FINISHED'}
