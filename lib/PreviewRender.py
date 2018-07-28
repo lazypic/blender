@@ -14,7 +14,7 @@ class PreviewRender(bpy.types.Operator):
 			#find how to run dialog err window.
 			print("need save")
 			return {'FINISHED'}
-		bpy.context.scene.render.image_settings.file_format = 'THEORA'
+		bpy.context.scene.render.image_settings.file_format = 'FFMPEG'
 		bpy.context.scene.render.filepath = self.ogvFilename()
 		bpy.context.scene.render.use_stamp = True
 		bpy.context.scene.render.use_stamp_lens = True
