@@ -4,7 +4,7 @@ import os
 import sys
 import bpy
 import time
-sys.path.append('%s/blender/lib' % (os.path.expanduser("~")))
+sys.path.append("%s/lib" % os.path.dirname(__file__))
 
 #import custom python files.
 from Wiki import *
