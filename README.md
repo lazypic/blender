@@ -11,3 +11,6 @@ cd ~ && git clone https://github.com/lazypic/blender.git
 ```bash
 $ /Applications/Blender/blender.app/Contents/MacOS/blender --python ~/blender/init.py
 ```
+
+#### Reference
+https://blender.community/c/rightclickselect/
