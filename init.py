@@ -11,11 +11,13 @@ from Wiki import *
 from Init import *
 from PreviewRender import *
 from ExportAlembic import *
+from AllRender import *
 
 def register():
 	bpy.utils.register_class(Wiki)
 	bpy.utils.register_class(Init)
 	bpy.utils.register_class(PreviewRender)
+	bpy.utils.register_class(AllRender)
 	# Export Alembic for Nuke and Unreal
 	bpy.utils.register_class(ExportAlembic)
 	bpy.utils.register_class(LazypicExportAbcCam)
