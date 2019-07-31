@@ -6,10 +6,16 @@ This Code is lazypic blender setting code.
 cd ~ && git clone https://github.com/lazypic/blender.git
 ```
 
-#### how to run
-- macOS
+#### install Blender ( macOS )
+아래 명령어를 이용해서 빠르게 블렌더를 설치할 수 있습니다.
+클라우드 버킷 접근권한이 필요합니다. 일반적인 블랜더는 [Blender.org](https://blender.org) 에서 다운받으셔도 됩니다.
 ```bash
-$ /Applications/Blender/blender.app/Contents/MacOS/blender --python ~/blender/init.py
+$ aws s3 sync s3://lazypic-app/$OSTYPE ~/app
+```
+
+- run
+```bash
+$ ~/app/blender --python ~/blender/init.py
 ```
 
 #### Reference
