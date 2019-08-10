@@ -18,6 +18,11 @@ $ aws s3 sync s3://lazypic-app/$OSTYPE ~/app
 $ blender --python ~/blender/init.py
 ```
 
+#### Upload Blender
+```
+$ aws s3 sync $HOME/app/blender2.8 s3://lazypic-app/$OSTYPE/blender2.8 --profile lazypic
+```
+
 #### Reference
 - https://blender.community/c/rightclickselect/
 - Other Build Version: `https://blender.community/c/graphicall
