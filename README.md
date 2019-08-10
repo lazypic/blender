@@ -19,6 +19,8 @@ $ blender --python ~/blender/init.py
 ```
 
 #### Upload Blender
+자신이 사용하는 버전을 클라우드에 업로드하는 명령어는 아래와 같습니다.
+
 ```
 $ aws s3 sync $HOME/app/blender2.8 s3://lazypic-app/$OSTYPE/blender2.8 --profile lazypic
 ```
