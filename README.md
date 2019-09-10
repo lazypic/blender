@@ -22,6 +22,7 @@ $ blender --python ~/blender/init.py
 AWS S# 클라우드를 통해서 Blender를 다운로드 합니다.
 ```bash
 $ aws s3 sync s3://lazypic-app/$OSTYPE/blender2.8 $HOME/app/blender2.8 --profile lazypic
+$ chmod -R 775 ~/app/blender2.8
 ```
 
 #### Upload Blender
