@@ -18,6 +18,12 @@ $ aws s3 sync s3://lazypic-app/$OSTYPE ~/app
 $ blender --python ~/blender/init.py
 ```
 
+#### Download Blender
+AWS S# 클라우드를 통해서 Blender를 다운로드 합니다.
+```bash
+$ aws s3 sync s3://lazypic-app/$OSTYPE/blender2.8 $HOME/app/blender2.8 --profile lazypic
+```
+
 #### Upload Blender
 자신이 사용하는 버전을 클라우드에 업로드하는 명령어는 아래와 같습니다.
 
