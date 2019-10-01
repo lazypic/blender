@@ -33,7 +33,7 @@ monkey = bpy.ops.mesh.primitive_monkey_add(location=(4,0,0))
 ```
 Run Script버튼을 누르면 0,0,0위치에 큐브가 4,0,0위치에 원숭이가 생성된다. 
 
-위의 큐브를 생성하는 bpy.ops.mesh.primitive_cube_add() 와 for문을 사용하면 다음과 같이 여러개의 cube를 만들 수 있다. 
+위의 큐브를 생성하는 bpy.ops.mesh.primitive_cube_add() 와 for문을 사용하면 다음과 같이 여러개의 큐브를 만들 수 있다. 
 ```python
 import bpy
 
