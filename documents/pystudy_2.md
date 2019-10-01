@@ -12,6 +12,7 @@ for i in range(10):
 
 # math모듈 사용하기 
 
+## sin, cos사용하기 
 
 ```python
 import bpy
