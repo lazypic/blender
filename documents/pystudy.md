@@ -12,7 +12,8 @@
 파이썬으로 Blender를 제어하기 위해선 [Blender Python API](https://docs.blender.org/api/current/)를 이용한다. 
 
 일단 Blender 2.8을 실행해보자.
-Blender에서 python 코딩을 할 땐,  [Text Editor](https://docs.blender.org/manual/en/latest/editors/text_editor.html)를 사용한다. 
+
+Blender에서 코딩을 할때는 [Text Editor](https://docs.blender.org/manual/en/latest/editors/text_editor.html)를 이용한다. 
 
  New를 클릭해서 새로운 문서를 만들고, 아래 코드를 써보자.
 
