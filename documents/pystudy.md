@@ -46,4 +46,5 @@ for i in a:
 ## 오늘의 문제 
 a가 짝수 일때만 큐브가 생성되도록 위의 코드를 바꿔보세요. 
 
+참고 [용빈 파이썬 스터디 2강](https://github.com/studio2l/pystudy/blob/master/2.md)
 
