@@ -7,7 +7,7 @@
 답은 혼자 짜지 않는다는 것이다. 
 다른 프로그래머들이 짜놓은 라이브러리나 API를 이용하면 쉽고 빠르게 원하는 프로그램을 만들 수 있다. 
 
-#Python으로 Blender제어하기 
+# Python으로 Blender제어하기 
 
 파이썬으로 Blender를 제어하기 위해선 [Blender Python API](https://docs.blender.org/api/current/)를 이용한다. 
 
@@ -42,7 +42,7 @@ for i in a:
     mesh = bpy.ops.mesh.primitive_cube_add(location=(i,i,i))
 ```
 
-##오늘의 문제 
+## 오늘의 문제 
 a가 짝수 일때만 큐브가 생성되도록 위의 코드를 바꿔보세요. 
 
 
