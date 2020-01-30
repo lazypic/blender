@@ -20,8 +20,6 @@ class PreviewRender(bpy.types.Operator):
 		bpy.context.scene.render.use_stamp_lens = True
 		bpy.context.scene.render.use_stamp_marker = True
 		bpy.context.scene.render.use_stamp_sequencer_strip = True
-		bpy.context.scene.render.resolution_x = 1280
-		bpy.context.scene.render.resolution_y = 720
 		bpy.context.scene.render.resolution_percentage = 100
 		bpy.ops.render.opengl(animation=True)
 		return {'FINISHED'}
