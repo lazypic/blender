@@ -12,12 +12,16 @@ from Init import *
 from PreviewRender import *
 from ExportAlembic import *
 from AllRender import *
+from RemoveDuplicateMaterial import *
 
 def register():
 	bpy.utils.register_class(Wiki)
 	bpy.utils.register_class(Init)
+	# Render
 	bpy.utils.register_class(PreviewRender)
 	bpy.utils.register_class(AllRender)
+	# Material
+	bpy.utils.register_class(RemoveDuplicateMaterial)
 	# Export Alembic for Nuke and Unreal
 	bpy.utils.register_class(ExportAlembic)
 	bpy.utils.register_class(LazypicExportAbcCam)
