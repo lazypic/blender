@@ -14,4 +14,9 @@ class Init(bpy.types.Operator):
 		bpy.context.scene.render.engine = 'CYCLES'
 		bpy.data.scenes["Scene"].cycles.shading_system = True # OSL Shader Enable
 		bpy.data.scenes["Scene"].unit_settings.system = "METRIC" # default meter setting.
+
+		# Python Editor setting
+		bpy.context.space_data.show_line_numbers = True
+		bpy.context.space_data.show_word_wrap = True
+		bpy.context.space_data.show_syntax_highlight = True
 		return {'FINISHED'}
