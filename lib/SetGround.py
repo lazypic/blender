@@ -24,7 +24,7 @@ def origin_to_bottom(obj):
 	mw.translation = global_origin
 
 class SetGround(bpy.types.Operator):
-	"""lazypic asset setting- origin to bottom & move to 0,0,0"""
+	#lazypic asset setting- origin to bottom & move to 0,0,0
 	bl_idname = "lazypic.set_ground"
 	bl_label = "set_ground"
 	bl_options = {'REGISTER', 'UNDO'}

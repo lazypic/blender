@@ -1,7 +1,7 @@
 import bpy
 
 class AllRender(bpy.types.Operator):
-	"""lazypic all object restict rendering on"""
+	#lazypic all object restict rendering on
 	bl_idname = "lazypic.allrender"
 	bl_label = "allrender"
 	bl_options = {'REGISTER', 'UNDO'}
