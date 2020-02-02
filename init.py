@@ -13,10 +13,13 @@ from PreviewRender import *
 from ExportAlembic import *
 from AllRender import *
 from RemoveDuplicateMaterial import *
+from SetGround import *
 
 def register():
 	bpy.utils.register_class(Wiki)
 	bpy.utils.register_class(Init)
+	# Transform
+	bpy.utils.register_class(SetGround)
 	# Render
 	bpy.utils.register_class(PreviewRender)
 	bpy.utils.register_class(AllRender)
