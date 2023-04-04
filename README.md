@@ -32,6 +32,9 @@ $ chmod -R 775 ~/app/blender2.8
 $ aws s3 sync $HOME/app/blender2.8 s3://lazypic-app/$OSTYPE/blender2.8 --profile lazypic
 ```
 
+#### Source
+- AI Texture: https://withpoly.com/browse/textures
+
 #### Reference
 - https://blender.community/c/rightclickselect/
 - Other Build Version: `https://blender.community/c/graphicall
